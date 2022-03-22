@@ -8,6 +8,8 @@ autopep8 = "*"
 pylint = "*"
 
 [packages]
+beautifulsoup4 = "==4.6.0"
+requests = "*"
 
 [requires]
 python_version = "3.7"
