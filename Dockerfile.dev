@@ -20,5 +20,5 @@ RUN echo "if [[ -z \"\${VIRTUAL_ENV}\" ]]; then" >> /root/.bashrc && \
 
 COPY scripts/ /opt/bin
 
-ENTRYPOINT ["./scripts/docker-setup.sh"]
-ENTRYPOINT ["./scripts/docker-entrypoint.sh"]
+ENTRYPOINT ["/opt/bin/docker-setup.sh"]
+ENTRYPOINT ["/opt/bin/docker-entrypoint.sh"]
